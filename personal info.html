@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>College Registration Form</title>
+
+    <style>
+        body {
+			background-image: url("quizbg.jpg");
+            background-size: 200%;
+			background-repeat: no-repeat;
+            font-family: 'Arial';
+            margin: 10px 20px;
+            padding: 10px 20px;
+        }
+		 h2 {
+            text-align: center;
+			
+        }
+
+        h1 {
+            text-align: center;
+		    font-family: 'Times New Roman';
+			
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form {
+            width: 100%;
+            max-width: 500px;
+            padding: 35px 35px;
+			justify-content: center;
+			box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+			margin-left:365px;
+			margin-bottom: 100px;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2x #100c08;
+            border-radius: 3px;
+            box-sizing: border-box;
+			text-transform: capitalize;
+            font-size: 14px;
+		
+        }
+		
+		input[type="email"],
+		input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #100c08;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            background-color: #080808;
+            color: linen;
+            padding: 12px 24px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #004242 ;
+        }
+
+        input[type="file"] {
+            margin-bottom: 15px;
+        }
+
+        .image-button {
+    background-color: #000000; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+.image-button img {
+	width: 20px; 
+    height: auto;
+    vertical-align: middle; 
+    margin-right: 5px;
+	border-radius: none;
+}
+		
+    </style>
+</head>
+<body>
+        <h1>FILL UP BELOW</h1>
+		<center>
+		<div class="logo">
+		<a href="index.html"><img src="mind.jpg" height="90px" width="100"></a>
+		</div>
+		</center>
+		<h2> PERSONAL INFORMATION:	 </h2>
+    <form>
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter your last name"required >
+
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter your first name"required>
+
+        <label>Middle Name:</label>
+        <input type="text" placeholder="Enter your middle name"required>
+
+        <label>E-mail:</label>
+        <input type="email" placeholder="Enter your e-mail"required>
+
+        <label>Address:</label>
+        <input type="text" placeholder="Enter your address"required>
+
+        <label>Region:</label>
+        <select required>
+            <option>Select Region</option>
+            <option>Region I – Ilocos Region</option>
+            <option>Region II – Cagayan Valley</option>
+            <option>Region III – Central Luzon</option>
+		    <option>Region IV‑A – CALABARZON</option>
+            <option>MIMAROPA Regionn</option>
+		    <option>Region V – Bicol Region</option>
+            <option>Region VI – Western Visayas</option>
+            <option>Region VII – Central Visayas</option>
+            <option>Region VIII – Eastern Visayas</option>
+			<option>Region IX – Zamboanga Peninsula</option>
+            <option>Region X – Northern Mindanao</option>
+		    <option>Region XI – Davao Region</option>
+            <option>Region XII – SOCCSKSARGEN</option>
+			<option>Region XIII – Caraga</option>
+            <option>NCR – National Capital Regionn</option>
+			<option>CAR – Cordillera Administrative Region</option>
+			<option>BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+        </select>
+		
+	    <label>Contact Number</label>
+        <input type="text" pattern="[0-9]*" placeholder="Enter your contact number"required>
+		<br><br>
+
+        <label>Username:</label>
+        <input type="text" placeholder="Enter your username"required>
+		
+		  <label>Password:</label>
+        <input type="text" placeholder="Enter your password"required>
+
+        <label>Confirm password:</label>
+        <input type="text" placeholder="Enter your password"required>
+		<br><br><br>
+	       <center>
+           <a href="checkout.html" class="image-link">
+    <button type="button" class="image-button">
+        <img src="submit.jpg" alt="Image">
+        Check out!
+    </button>
+		   </center>
+        </div>
+    </form>
+</body>
+</html>
